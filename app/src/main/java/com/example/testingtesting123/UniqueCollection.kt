@@ -6,8 +6,8 @@ class UniqueCollection {
 
     /** Add an item to the collection */
     fun addItem (item: Item) {
-        if (!collection.contains(item))
-            collection.add(item)
+        if (!collection.contains(item)) // Check if the item is already in the collection
+            collection.add(item) // Add the item to the collection if it's not already there
     }
 
     /** Return an element from the collection at the specified position */
@@ -24,7 +24,7 @@ class UniqueCollection {
 
     /** Clear all items from hte collection */
     fun clear () {
-        collection.clear()
+        collection.clear() // Clear all items from the collection
     }
 
     /** Return the side of the collection */

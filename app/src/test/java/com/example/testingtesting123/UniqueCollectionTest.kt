@@ -34,13 +34,13 @@ class UniqueCollectionTest {
     // Test Driven Development (TDD) test - complete specified function so that this test passes
     @Test
     fun clearAllItems() {
-        collection.addItem(Item("item1"))
-        collection.addItem(Item("Item2"))
+        collection.addItem(Item("item1")) // Add an item to the collection
+        collection.addItem(Item("Item2")) // Add another item to the collection
 
-        val originalSize = collection.size()
-        collection.clear()
-        val newSize = collection.size()
+        val originalSize = collection.size() // Get the initial size of the collection
+        collection.clear() // Clear all items from the collection
+        val newSize = collection.size() // Assuming size() returns the number of items in the collection
 
-        assert(originalSize == 2 && newSize == 0) {"Items not cleared"}
+        assert(originalSize == 2 && newSize == 0) {"Items not cleared"} // Ensure the collection is empty
     }
 }
